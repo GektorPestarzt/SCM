@@ -1,584 +1,564 @@
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                   ^
+[а] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+               	^
 
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                ^
+[а] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                            	^
 
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                              ^
+[а] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                                          	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                   ^
+[а] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+               	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                ^
+[а] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                            	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                              ^
+[а] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                                          	^
 
-lcc: "crypto/async/arch/async_posix.c", line 119: warning #223: function
-          "makecontext" declared implicitly [-Wimplicit-function-declaration]
-              makecontext(&fibre->fibre, async_start_func, 0);
-              ^
+[-] lcc: "crypto/bio/bio_print.c", line 329: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	value = (size_t)va_arg(args, void *);
+                      	^
 
-lcc: "crypto/bio/bio_print.c", line 329: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  value = (size_t)va_arg(args, void *);
-                          ^
-
-lcc: "crypto/bn/bn_exp.c", line 600: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-          ((unsigned char*)(x_) + (MOD_EXP_CTIME_MIN_CACHE_LINE_WIDTH - (((size_t)(x_)) & (MOD_EXP_CTIME_MIN_CACHE_LINE_MASK))))
-                                                                          ^
+[в] lcc: "crypto/bn/bn_exp.c", line 600: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+      	((unsigned char*)(x_) + (MOD_EXP_CTIME_MIN_CACHE_LINE_WIDTH - (((size_t)(x_)) & (MOD_EXP_CTIME_MIN_CACHE_LINE_MASK))))
+                                                                      	^
  in expansion of macro "MOD_EXP_CTIME_ALIGN" at line 749
-      powerbuf = MOD_EXP_CTIME_ALIGN(powerbufFree);
-                 ^
+  	powerbuf = MOD_EXP_CTIME_ALIGN(powerbufFree);
+             	^
 
-lcc: "crypto/evp/e_chacha20_poly1305.c", line 224: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-      buf = storage + ((0 - (size_t)storage) & 15);   /* align */
-                            ^
+[в] lcc: "crypto/evp/e_chacha20_poly1305.c", line 224: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+  	buf = storage + ((0 - (size_t)storage) & 15);   /* align */
+                        	^
 
-lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
-                       ^
+[г] lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
+                   	^
 
-lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
-                                       ^
+[г] lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
+                                   	^
 
-lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          if (((PTRDIFF_T)out == (PTRDIFF_T)in)
-               ^
+[г] lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	if (((PTRDIFF_T)out == (PTRDIFF_T)in)
+           	^
 
-lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          if (((PTRDIFF_T)out == (PTRDIFF_T)in)
-                                 ^
+[г] lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	if (((PTRDIFF_T)out == (PTRDIFF_T)in)
+                             	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-           ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+       	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                        ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                    	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                      ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                  	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-               ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+           	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                            ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                        	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                          ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                      	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-               ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+           	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                            ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                        	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                          ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                      	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                       ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                   	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                    ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                                  ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                              	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                       ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                   	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                    ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                                  ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                              	^
 
-lcc: "crypto/modes/ctr128.c", line 45: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      if (IS_LITTLE_ENDIAN || ((size_t)counter % sizeof(size_t)) != 0) {
-                               ^
+[б] lcc: "crypto/modes/ctr128.c", line 45: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	if (IS_LITTLE_ENDIAN || ((size_t)counter % sizeof(size_t)) != 0) {
+                           	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                   ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+               	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                                ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+                            	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                                              ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+                                          	^
 
-lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                   ^
+[б] lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+               	^
 
-lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                                ^
+[б] lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+                            	^
 
-lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                   ^
+[б] lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+               	^
 
-lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                                ^
+[б] lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+                            	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                   ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+               	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                                ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+                            	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                                              ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+                                          	^
 
-lcc: "crypto/sha/sha_local.h", line 158: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              && ((size_t)p % 4) == 0) {
-                  ^
+[б] lcc: "crypto/sha/sha_local.h", line 158: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	&& ((size_t)p % 4) == 0) {
+              	^
 
-lcc: "crypto/sha/sha256.c", line 311: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-              && ((size_t)in % 4) == 0) {
-                  ^
+[б] lcc: "crypto/sha/sha256.c", line 311: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+          	&& ((size_t)in % 4) == 0) {
+              	^
 
-lcc: "crypto/sha/sha512.c", line 314: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)data % sizeof(c->u.d[0]) != 0)
-              ^
+[б] lcc: "crypto/sha/sha512.c", line 314: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)data % sizeof(c->u.d[0]) != 0)
+          	^
 
-lcc: "crypto/sha/sha512.c", line 339: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-      if ((size_t)data % sizeof(c->u.d[0]) != 0)
-          ^
+[б] lcc: "crypto/sha/sha512.c", line 339: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+  	if ((size_t)data % sizeof(c->u.d[0]) != 0)
+      	^
 
-lcc: "crypto/whrlpool/wp_block.c", line 541: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)p & 7) {
-              ^
+[б] lcc: "crypto/whrlpool/wp_block.c", line 541: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)p & 7) {
+          	^
 
-lcc: "crypto/whrlpool/wp_block.c", line 785: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)p & 7) {
-              ^
+[б] lcc: "crypto/whrlpool/wp_block.c", line 785: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)p & 7) {
+          	^
 
-lcc: "providers/implementations/ciphers/cipher_aes_gcm_siv_polyval.c", line 46: warning #3325:
-          conversion from pointer to integer
-          [-Wpointer-to-int64-cast-protected]
+[б] lcc: "providers/implementations/ciphers/cipher_aes_gcm_siv_polyval.c", line 46: warning #3325:
+      	conversion from pointer to integer
+      	[-Wpointer-to-int64-cast-protected]
   #define aligned64(p) (((uintptr_t)p & 0x07) == 0)
-                         ^
+                     	^
  in expansion of macro "aligned64" at line 49
-      if (aligned64(out) && aligned64(in)) {
-          ^
+  	if (aligned64(out) && aligned64(in)) {
+      	^
 
-lcc: "providers/implementations/ciphers/cipher_aes_gcm_siv_polyval.c", line 46: warning #3325:
-          conversion from pointer to integer
-          [-Wpointer-to-int64-cast-protected]
+[б] lcc: "providers/implementations/ciphers/cipher_aes_gcm_siv_polyval.c", line 46: warning #3325:
+      	conversion from pointer to integer
+      	[-Wpointer-to-int64-cast-protected]
   #define aligned64(p) (((uintptr_t)p & 0x07) == 0)
-                         ^
+                     	^
  in expansion of macro "aligned64" at line 49
-      if (aligned64(out) && aligned64(in)) {
-                            ^
+  	if (aligned64(out) && aligned64(in)) {
+                        	^
 
-lcc: "providers/implementations/ciphers/cipher_chacha20_poly1305_hw.c", line 129: warning #3325:
-          conversion from pointer to integer
-          [-Wpointer-to-int64-cast-protected]
-      buf = storage + ((0 - (size_t)storage) & 15);   /* align */
-                            ^
+[в] lcc: "providers/implementations/ciphers/cipher_chacha20_poly1305_hw.c", line 129: warning #3325:
+      	conversion from pointer to integer
+      	[-Wpointer-to-int64-cast-protected]
+  	buf = storage + ((0 - (size_t)storage) & 15);   /* align */
+                        	^
 
-lcc: "ssl/record/methods/tls_pad.c", line 251: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-      rotated_mac = rotated_mac_buf + ((0 - (size_t)rotated_mac_buf) & 63);
-                                            ^
+[в] lcc: "ssl/record/methods/tls_pad.c", line 251: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+  	rotated_mac = rotated_mac_buf + ((0 - (size_t)rotated_mac_buf) & 63);
+                                        	^
 
-lcc: "ssl/quic/quic_lcidm.c", line 89: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      return (unsigned long)(uintptr_t)conn->opaque;
-                            ^
+[-] lcc: "ssl/quic/quic_lcidm.c", line 89: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	return (unsigned long)(uintptr_t)conn->opaque;
+                        	^
 
-lcc: "ssl/quic/quic_srtm.c", line 71: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-      return (unsigned long)(uintptr_t)item->opaque;
-                            ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 71: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+  	return (unsigned long)(uintptr_t)item->opaque;
+                        	^
 
-lcc: "ssl/quic/quic_srtm.c", line 243: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      uintptr_t opaque = (uintptr_t)item->opaque;
-                         ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 243: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	uintptr_t opaque = (uintptr_t)item->opaque;
+                     	^
 
-lcc: "ssl/quic/quic_srtm.c", line 248: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      while (cur != NULL && (uintptr_t)cur->opaque > opaque) {
-                            ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 248: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	while (cur != NULL && (uintptr_t)cur->opaque > opaque) {
+                        	^
 
-lcc: "ssl/record/methods/tls1_meth.c", line 624: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          align = (size_t)TLS_BUFFER_get_buf(wb) + SSL3_RT_HEADER_LENGTH;
-                  ^
+[-] lcc: "ssl/record/methods/tls1_meth.c", line 624: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	align = (size_t)TLS_BUFFER_get_buf(wb) + SSL3_RT_HEADER_LENGTH;
+              	^
 
-lcc: "ssl/record/methods/tls_common.c", line 314: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-      align = (size_t)rb->buf + SSL3_RT_HEADER_LENGTH;
-              ^
+[-] lcc: "ssl/record/methods/tls_common.c", line 314: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+  	align = (size_t)rb->buf + SSL3_RT_HEADER_LENGTH;
+          	^
 
-lcc: "ssl/record/methods/tls_common.c", line 1565: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-          align = (size_t)TLS_BUFFER_get_buf(wb);
-                  ^
+[-] lcc: "ssl/record/methods/tls_common.c", line 1565: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+      	align = (size_t)TLS_BUFFER_get_buf(wb);
+              	^
 
-lcc: "test/testutil/driver.c", line 37: warning #108: signed bit field of
-          length 1 [-Wsigned-one-bit-field]
-      int subtest:1;
-          ^
+[б] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+               	^
 
-lcc: "test/testutil/provider.c", line 172: in function
-          "fips_provider_version_match":
-lcc: "test/testutil/provider.c", line 234: warning: variable "r" may be used
-          uninitialized [-Wmaybe-uninitialized]
+[б] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                            	^
 
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                   ^
+[б] lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                                          	^
 
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                ^
+[б] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+               	^
 
-lcc: "crypto/aes/aes_ige.c", line 65: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                              ^
+[б] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                            	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                   ^
+[б] lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+           	|| ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
+                                          	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                ^
+[-] lcc: "crypto/bio/bio_print.c", line 329: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	value = (size_t)va_arg(args, void *);
+                      	^
 
-lcc: "crypto/aes/aes_ige.c", line 117: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-               || ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(long) ==
-                                              ^
-
-lcc: "crypto/async/arch/async_posix.c", line 119: warning #223: function
-          "makecontext" declared implicitly [-Wimplicit-function-declaration]
-              makecontext(&fibre->fibre, async_start_func, 0);
-              ^
-
-lcc: "crypto/bio/bio_print.c", line 329: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  value = (size_t)va_arg(args, void *);
-                          ^
-
-lcc: "crypto/bn/bn_exp.c", line 600: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-          ((unsigned char*)(x_) + (MOD_EXP_CTIME_MIN_CACHE_LINE_WIDTH - (((size_t)(x_)) & (MOD_EXP_CTIME_MIN_CACHE_LINE_MASK))))
-                                                                          ^
+[в] lcc: "crypto/bn/bn_exp.c", line 600: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+      	((unsigned char*)(x_) + (MOD_EXP_CTIME_MIN_CACHE_LINE_WIDTH - (((size_t)(x_)) & (MOD_EXP_CTIME_MIN_CACHE_LINE_MASK))))
+                                                                      	^
  in expansion of macro "MOD_EXP_CTIME_ALIGN" at line 749
-      powerbuf = MOD_EXP_CTIME_ALIGN(powerbufFree);
-                 ^
+  	powerbuf = MOD_EXP_CTIME_ALIGN(powerbufFree);
+             	^
 
-lcc: "crypto/evp/e_chacha20_poly1305.c", line 224: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-      buf = storage + ((0 - (size_t)storage) & 15);   /* align */
-                            ^
+[в] lcc: "crypto/evp/e_chacha20_poly1305.c", line 224: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+  	buf = storage + ((0 - (size_t)storage) & 15);   /* align */
+                        	^
 
-lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
-                       ^
+[г] lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
+                   	^
 
-lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
-                                       ^
+[г] lcc: "crypto/evp/evp_enc.c", line 555: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	PTRDIFF_T diff = (PTRDIFF_T)ptr1-(PTRDIFF_T)ptr2;
+                                   	^
 
-lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          if (((PTRDIFF_T)out == (PTRDIFF_T)in)
-               ^
+[г] lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	if (((PTRDIFF_T)out == (PTRDIFF_T)in)
+           	^
 
-lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          if (((PTRDIFF_T)out == (PTRDIFF_T)in)
-                                 ^
+[г] lcc: "crypto/evp/evp_enc.c", line 889: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	if (((PTRDIFF_T)out == (PTRDIFF_T)in)
+                             	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-           ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+       	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                        ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                    	^
 
-lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-          ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                      ^
+[б] lcc: "crypto/modes/cbc128.c", line 36: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+      	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                  	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-               ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+           	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                            ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                        	^
 
-lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                          ^
+[б] lcc: "crypto/modes/cbc128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                      	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-               ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+           	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                            ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                        	^
 
-lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              ((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
-                                          ^
+[б] lcc: "crypto/modes/cbc128.c", line 122: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) != 0) {
+                                      	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                       ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                   	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                    ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                	^
 
-lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                                  ^
+[б] lcc: "crypto/modes/cfb128.c", line 50: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                              	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                       ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                   	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                    ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                	^
 
-lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-                  if (((size_t)in | (size_t)out | (size_t)ivec) %
-                                                  ^
+[б] lcc: "crypto/modes/cfb128.c", line 100: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+              	if (((size_t)in | (size_t)out | (size_t)ivec) %
+                                              	^
 
-lcc: "crypto/modes/ctr128.c", line 45: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      if (IS_LITTLE_ENDIAN || ((size_t)counter % sizeof(size_t)) != 0) {
-                               ^
+[б] lcc: "crypto/modes/ctr128.c", line 45: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	if (IS_LITTLE_ENDIAN || ((size_t)counter % sizeof(size_t)) != 0) {
+                           	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                   ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+               	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                                ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+                            	^
 
-lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ecount_buf)
-                                              ^
+[б] lcc: "crypto/modes/ctr128.c", line 94: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ecount_buf)
+                                          	^
 
-lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                   ^
+[б] lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+               	^
 
-lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                                ^
+[б] lcc: "crypto/modes/gcm128.c", line 847: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+                            	^
 
-lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                   ^
+[б] lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+               	^
 
-lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
-                                ^
+[б] lcc: "crypto/modes/gcm128.c", line 1074: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out) % sizeof(size_t) != 0)
+                            	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                   ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+               	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                                ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+                            	^
 
-lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
-                                              ^
+[б] lcc: "crypto/modes/ofb128.c", line 48: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	if (((size_t)in | (size_t)out | (size_t)ivec) % sizeof(size_t) !=
+                                          	^
 
-lcc: "crypto/sha/sha_local.h", line 158: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-              && ((size_t)p % 4) == 0) {
-                  ^
+[б] lcc: "crypto/sha/sha_local.h", line 158: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+          	&& ((size_t)p % 4) == 0) {
+              	^
 
-lcc: "crypto/sha/sha256.c", line 311: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-              && ((size_t)in % 4) == 0) {
-                  ^
+[б] lcc: "crypto/sha/sha256.c", line 311: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+          	&& ((size_t)in % 4) == 0) {
+              	^
 
-lcc: "crypto/sha/sha512.c", line 314: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)data % sizeof(c->u.d[0]) != 0)
-              ^
+[б] lcc: "crypto/sha/sha512.c", line 314: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)data % sizeof(c->u.d[0]) != 0)
+          	^
 
-lcc: "crypto/sha/sha512.c", line 339: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-      if ((size_t)data % sizeof(c->u.d[0]) != 0)
-          ^
+[б] lcc: "crypto/sha/sha512.c", line 339: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+  	if ((size_t)data % sizeof(c->u.d[0]) != 0)
+      	^
 
-lcc: "crypto/whrlpool/wp_block.c", line 541: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)p & 7) {
-              ^
+[б] lcc: "crypto/whrlpool/wp_block.c", line 541: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)p & 7) {
+          	^
 
-lcc: "crypto/whrlpool/wp_block.c", line 785: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          if ((size_t)p & 7) {
-              ^
+[б] lcc: "crypto/whrlpool/wp_block.c", line 785: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	if ((size_t)p & 7) {
+          	^
 
-lcc: "ssl/quic/quic_lcidm.c", line 89: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      return (unsigned long)(uintptr_t)conn->opaque;
-                            ^
+[-] lcc: "ssl/quic/quic_lcidm.c", line 89: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	return (unsigned long)(uintptr_t)conn->opaque;
+                        	^
 
-lcc: "ssl/quic/quic_srtm.c", line 71: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-      return (unsigned long)(uintptr_t)item->opaque;
-                            ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 71: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+  	return (unsigned long)(uintptr_t)item->opaque;
+                        	^
 
-lcc: "ssl/quic/quic_srtm.c", line 243: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      uintptr_t opaque = (uintptr_t)item->opaque;
-                         ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 243: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	uintptr_t opaque = (uintptr_t)item->opaque;
+                     	^
 
-lcc: "ssl/quic/quic_srtm.c", line 248: warning #3325: conversion from pointer
-          to integer [-Wpointer-to-int64-cast-protected]
-      while (cur != NULL && (uintptr_t)cur->opaque > opaque) {
-                            ^
+[-] lcc: "ssl/quic/quic_srtm.c", line 248: warning #3325: conversion from pointer
+      	to integer [-Wpointer-to-int64-cast-protected]
+  	while (cur != NULL && (uintptr_t)cur->opaque > opaque) {
+                        	^
 
-lcc: "ssl/record/methods/tls1_meth.c", line 624: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-          align = (size_t)TLS_BUFFER_get_buf(wb) + SSL3_RT_HEADER_LENGTH;
-                  ^
+[-] lcc: "ssl/record/methods/tls1_meth.c", line 624: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+      	align = (size_t)TLS_BUFFER_get_buf(wb) + SSL3_RT_HEADER_LENGTH;
+              	^
 
-lcc: "ssl/record/methods/tls_common.c", line 314: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-      align = (size_t)rb->buf + SSL3_RT_HEADER_LENGTH;
-              ^
+[-] lcc: "ssl/record/methods/tls_common.c", line 314: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+  	align = (size_t)rb->buf + SSL3_RT_HEADER_LENGTH;
+          	^
 
-lcc: "ssl/record/methods/tls_common.c", line 1565: warning #3325: conversion
-          from pointer to integer [-Wpointer-to-int64-cast-protected]
-          align = (size_t)TLS_BUFFER_get_buf(wb);
-                  ^
+[-] lcc: "ssl/record/methods/tls_common.c", line 1565: warning #3325: conversion
+      	from pointer to integer [-Wpointer-to-int64-cast-protected]
+      	align = (size_t)TLS_BUFFER_get_buf(wb);
+              	^
 
-lcc: "ssl/record/methods/tls_pad.c", line 251: warning #3325: conversion from
-          pointer to integer [-Wpointer-to-int64-cast-protected]
-      rotated_mac = rotated_mac_buf + ((0 - (size_t)rotated_mac_buf) & 63);
-                                            ^
+[в] lcc: "ssl/record/methods/tls_pad.c", line 251: warning #3325: conversion from
+      	pointer to integer [-Wpointer-to-int64-cast-protected]
+  	rotated_mac = rotated_mac_buf + ((0 - (size_t)rotated_mac_buf) & 63);
+                                        	^
 
-lcc: "engines/e_afalg.c", line 293: warning #3325: conversion from pointer to
-          integer [-Wpointer-to-int64-cast-protected]
-      cb->aio_buf = (size_t)buf;
-                    ^
+[-] lcc: "engines/e_afalg.c", line 293: warning #3325: conversion from pointer to
+      	integer [-Wpointer-to-int64-cast-protected]
+  	cb->aio_buf = (size_t)buf;
+                	^
